@@ -1,6 +1,6 @@
-//Espero corra todo el html hasta ejecutar js
+//Espero corra html para ejecutar js
 document.addEventListener('DOMContentLoaded', () => {
-    //Busco el botón submit
+    //Busco el botón convertir
         const formSubmit = document.getElementById('convert-btn');
     //Asocio evento y acción
         formSubmit.addEventListener('click', () => {
@@ -31,20 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
     function transformarNum(a) {
     //string vacio
         let romano = '';
-    //Concateno las siglas correspondientes según el valor de a que se actualiza a medida que ya simbolizo cantidades. 
+    //Concateno las siglas correspondientes según el valor de a que se actualiza a medida que simbolizo cantidades. 
         while (a >= 1000) {
           romano += 'M';
           a -= 1000;
         };
-        while (a >= 900) {
+        if (a >= 900) {
           romano += 'CM';
           a -= 900;
         };
-        while (a >= 500){
+        if (a >= 500){
           romano += 'D';
           a -= 500;
         };
-        while (a >= 400) {
+        if (a >= 400) {
           romano += 'CD';
           a -= 400;
         };
@@ -52,15 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
           romano += 'C';
           a -= 100;
         };
-        while (a >= 90) {
+        if (a >= 90) {
           romano += 'XC';
           a -= 90;
         };
-        while (a >= 50) {
+        if (a >= 50) {
           romano += 'L';
           a -= 50;
         };
-        while (a >= 40) {
+        if (a >= 40) {
           romano += 'XL';
           a -= 40; 
         };
@@ -68,15 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
           romano += 'X'; 
           a -= 10; 
         };
-        while (a >= 9) {
+        if (a >= 9) {
           romano += 'IX';
           a -= 9;
         };
-        while (a >= 5) {
+        if (a >= 5) {
           romano += 'V'; 
           a -= 5; 
         };
-        while (a >= 4) {
+        if (a >= 4) {
           romano += 'IV'; 
           a -= 4;
         };
