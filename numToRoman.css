@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    padding: 1vh 2vw; 
+  }
+  
+  #Principal { 
+      background-color : #F3E037;
+      padding: 2vh 2vw;
+      text-align: center;
+      font-family: Arial, sans-serif;
+  }
+    
+  #titulo {
+      font-size: 6.5vh;
+  }
+  
+  #instruccion, #instruccion2 {
+      font-size: 3.5vh;
+  }
+  
+  form {
+    align-items: center; 
+    justify-content: center; 
+    display: flex; 
+  }
+  
+  #number, #convert-btn { 
+      font-size: 4vh; 
+  }
+    
+  #output {
+      padding: 2vh 2vw;
+      text-align: center;
+      font-family: Times New Roman, sans-serif; 
+      background-color : #F3E037;
+      font-size: 4vh; 
+  }
+  
